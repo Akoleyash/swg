@@ -1,6 +1,8 @@
 const user = document.querySelector("#user");
 const show = document.getElementById("show");
 const again = document.querySelector(".again");
+const n = document.getElementById("name")
+const show1 = document.getElementById("show1")
 const snakewatergun = (user,cpu)=>{
     if (user == cpu)
     {
@@ -37,17 +39,20 @@ const cpuChance = ()=>{
     if (number<33)
     {
         cpu = 'snake';
-        show1.innerHTML = '<img src="./assets/snake.png" />';
+        show1.innerHTML = '<img src="./assets/snake.png" class="text-center pt-5 mx-auto d-block card-img-top pt-2 w-25 h-25"/>';
+        n.innerHTML = '<h5 class="card-title text-center">Snake</h5>'
     }
     else if (number>33 && number<66)
     {
         cpu = 'water';
-        show1.innerHTML = '<img src="./assets/water.png" />';
+        show1.innerHTML = '<img src="./assets/water.png" class="text-center pt-5 mx-auto d-block card-img-top pt-2 w-25 h-25"/>';
+        n.innerHTML = '<h5 class="card-title text-center">Water</h5>'
     }
     else
     {
         cpu = 'gun';
-        show1.innerHTML = '<img src="./assets/gun.png" />';
+        show1.innerHTML = '<img src="./assets/gun.png" class="text-center pt-5 mx-auto d-block card-img-top pt-2 w-25 h-25"/>';
+        n.innerHTML = '<h5 class="card-title text-center">Gun</h5>'
     }
     return cpu;
 }
