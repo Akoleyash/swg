@@ -37,14 +37,17 @@ const cpuChance = ()=>{
     if (number<33)
     {
         cpu = 'snake';
+        show.innerHTML = '<img src="./assets/snake.png" />';
     }
     else if (number>33 && number<66)
     {
         cpu = 'water';
+        show.innerHTML = '<img src="./assets/water.png" />';
     }
     else
     {
         cpu = 'gun';
+        show.innerHTML = '<img src="./assets/gun.png" />';
     }
     return cpu;
 }
