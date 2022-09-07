@@ -70,6 +70,3 @@ user.addEventListener("click",(value)=>{
         playsound('win.wav');
     }
 })
-again.addEventListener("click",()=>{
-    show.innerHTML = null;
-})
