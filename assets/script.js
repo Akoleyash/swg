@@ -8,15 +8,15 @@ const snakewatergun = (user,cpu)=>{
     {
         return 0;
     }
-    if (user = 'snake' && cpu =='gun')
+    if (user == 'snake' && cpu =='gun')
     {
         return -1;
     }
-    else if (user = 'gun' && cpu == 'snake')
+    else if (user == 'gun' && cpu == 'snake')
     {
         return 1;
     }
-    if (user ='snake' && cpu == 'water')
+    if (user =='snake' && cpu == 'water')
     {
         return 1;
     }
@@ -24,7 +24,7 @@ const snakewatergun = (user,cpu)=>{
     {
         return -1;
     }
-    if (user ='gun' && cpu == 'water')
+    if (user =='gun' && cpu == 'water')
     {
         return -1;
     }
@@ -34,15 +34,16 @@ const snakewatergun = (user,cpu)=>{
     }
 }
 const cpuChance = ()=>{
-    let number = Math.floor(Math.random() * 100) + 1;
+    let number = Math.floor(Math.random() * 3);
+    console.log(number);
     let cpu;
-    if (number<33)
+    if (number==0)
     {
         cpu = 'snake';
         show1.innerHTML = '<img src="./assets/snake.png" class="text-center pt-5 mx-auto d-block card-img-top pt-2 w-25 h-25"/>';
         n.innerHTML = '<h5 class="card-title text-center">Snake</h5>'
     }
-    else if (number>33 && number<66)
+    else if (number==1)
     {
         cpu = 'water';
         show1.innerHTML = '<img src="./assets/water.png" class="text-center pt-5 mx-auto d-block card-img-top pt-2 w-25 h-25"/>';
