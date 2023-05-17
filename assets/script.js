@@ -36,7 +36,7 @@ const snakewatergun = (user,cpu)=>{
 const cpuChance = ()=>{
     let number = Math.floor(Math.random() * 3);
     console.log(number);
-    let cpu;
+    const cpu = 0;
     if (number==0)
     {
         cpu = 'snake';
