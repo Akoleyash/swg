@@ -74,8 +74,10 @@ user.addEventListener("click",(value)=>{
         show.innerHTML = '<h2 style="color:red;">You loose!!</h2>';
         playsound('loose.wav');
     }
-    else{
+    else if(result == 1){
         show.innerHTML = '<h2 style="color:green;">You Win!!</h2>';
         playsound('win.wav');
     }
+    else{
+        console.log("Try again");
 })
