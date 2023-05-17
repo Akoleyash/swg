@@ -64,6 +64,8 @@ const playsound = (sound)=>{
 user.addEventListener("click",(value)=>{
     let user = value.target.id;
     let cpu = cpuChance();
+    console.log("user option : " + user);
+    console.log("cpu option: "+ cpu);
     let result = snakewatergun(user, cpu);
     if(result===0){
         show.innerHTML  = '<h2 style="color:blue;">Match Draw Try Again</h2>';
